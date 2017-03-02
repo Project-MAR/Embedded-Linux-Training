@@ -1,12 +1,8 @@
-/*
- * main.c
- *
- *  Created on: Mar 1, 2017
- *      Author: Ram
- */
+#include <stdio.h>
 
 int main(void)
 {
-
+	printf("animations");
+	//getchar();
 	return 0;
 }
