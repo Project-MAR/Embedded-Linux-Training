@@ -26,3 +26,22 @@ Lab 5 Kernel cross-compiling
    - Configure and cross-compile the kernel for an arm platform
    - On this platform, interact with the bootloader and boot your kernel
    
+Lab 6 A tiny embedded system
+   - Make Linux boot on a directory on your workstation, shared by NFS
+   - Create and configure a minimalistic Linux embedded system
+   - Install and use BusyBox
+   - System startup with /sbin/init
+   - Set up a simple web interface
+   - Use shared libraries
+   
+Lab 7 Block filesystems
+   - Creating partitions on your block storage
+   - Booting your system with a mix of filesystems: SquashFS for the root filesystem (including applications), ext3 for configuration and user data, and tmpfs for temporary system files.
+   
+Lab 8 Flash Filesystems
+   - Creating partitions in your internal flash storage
+   - Creating a UBI image with several volumes and flashing it from U-Boot
+   - Manipulating UBI volumes from Linux
+   
+   
+   
