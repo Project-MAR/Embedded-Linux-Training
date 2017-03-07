@@ -15,3 +15,14 @@ Lab 3 U-Boot
    - Configure, build and install U-Boot
    - Learn U-Boot commands
    - Set up TFTP communication with the board
+   
+Lab 4 Kernel source
+   - Get the Linux kernel sources
+   - Apply patches
+   - How Patch work ?
+   
+Lab 5 Kernel cross-compiling
+   - Set up the cross-compiling environment
+   - Configure and cross-compile the kernel for an arm platform
+   - On this platform, interact with the bootloader and boot your kernel
+   
