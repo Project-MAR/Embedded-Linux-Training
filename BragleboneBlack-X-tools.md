@@ -12,3 +12,5 @@ make install
 ./ct-ng build
 
 ```
+./ct-ng list-samples
+./ct-ng arm-cortexa5-linux-uclibcgnueabihf
