@@ -17,8 +17,7 @@ make install
 Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit
 ```sh
 ./ct-ng list-samples
-./ct-ng arm-cortexa8-linux-gnueabihf
-./ct-ng menuconfig
+./ct-ng arm-cortexa8-linux-gnueabi
 ```
 
 ### fix missing iPV6 support
@@ -58,6 +57,27 @@ in "scripts/build/libc/uClibc.sh"
      # Force on options needed for C++ if we'll be making a C++ compiler.
      # I'm not sure locales are a requirement for doing C++... Are they?
      if [ "${CT_CC_LANG_CXX}" = "y" ]; then
+```
+
+---
+   
+run menu config
+```sh
+./ct-ng menuconfig
+```
+Set
+   - ucLib
+   - hf
+   - enable iPV6 Suppport
+   - Cross-gdb
+   - static gdbserver
+
+---
+   
+then
+
+```sh
+./ct-ng build
 ```
 
 ---
