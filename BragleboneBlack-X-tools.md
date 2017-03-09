@@ -14,3 +14,27 @@ make install
 ```
 ./ct-ng list-samples
 ./ct-ng arm-cortexa5-linux-uclibcgnueabihf
+   
+---
+
+### C library
+glibc   
+   - Designed for performance, standards compliance and portability
+   - Quite big
+   
+uClibc-ng
+   - A continuation of the old uClibc project
+   - Lightweight C library for small embedded systems
+   - Supports no-MMU architectures (ARM Cortex-M, etc)
+   - Approx 3.5 times smaller than glibc
+   - Used on a large number of production embedded products, including consumer electronic devices
+   
+musl C
+   - A lightweight, fast and simple library for embedded systems
+   - In particular, great at making small static executables
+   - Supported by build systems such as Buildroot
+
+---
+
+
+   
