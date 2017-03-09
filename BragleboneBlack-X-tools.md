@@ -8,16 +8,12 @@ autoreconf
 ./configure --enable-local
 make
 make install
-./ct-ng arm-unknown-linux-gnueabi
-./ct-ng menuconfig
-./ct-ng build
-
 ```
 
 Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit
 ```sh
 ./ct-ng list-samples
-./ct-ng arm-cortexa8-linux-gnueabi
+./ct-ng arm-cortex_a8-linux-gnueabi
 ```
 
 ### fix missing iPV6 support
