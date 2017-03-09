@@ -17,7 +17,47 @@ make install
 Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit
 ```sh
 ./ct-ng list-samples
-./ct-ng arm-cortexa5-linux-uclibcgnueabihf ***
+./ct-ng arm-cortexa8-linux-gnueabihf
+./ct-ng menuconfig
+```
+
+### fix missing iPV6 support
+[patch](https://github.com/crosstool-ng/crosstool-ng/pull/286/files)
+   
+in "config/libc/uClibc.in.2"
+
+```sh
+       If so, please report the issue, so we can default this
+       to off if too many people complain.
+ 
++config LIBC_UCLIBC_IPV6
++    bool
++    prompt "Add support for IPv6"
++    help
++      Say y if you want uClibc to support IPv6.
++
+ config LIBC_UCLIBC_WCHAR
+     bool
+     prompt "Add support for WCHAR"
+```
+
+in "scripts/build/libc/uClibc.sh"
+
+```sh
+@@ -427,6 +427,13 @@ manage_uClibc_config() {
+         CT_KconfigDisableOption "UCLIBC_HAS_WCHAR" "${dst}"
+     fi
+ 
++    # IPv6 support
++    if [ "${CT_LIBC_UCLIBC_IPV6}" = "y" ]; then
++        CT_KconfigEnableOption "UCLIBC_HAS_IPV6" "${dst}"
++    else
++        CT_KconfigDisableOption "UCLIBC_HAS_IPV6" "${dst}"
++    fi
++
+     # Force on options needed for C++ if we'll be making a C++ compiler.
+     # I'm not sure locales are a requirement for doing C++... Are they?
+     if [ "${CT_CC_LANG_CXX}" = "y" ]; then
 ```
 
 ---
