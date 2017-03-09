@@ -1,7 +1,12 @@
 ## BragleboneBlack-X-tools.md
+
 ```sh
 git clone https://github.com/crosstool-ng/crosstool-ng.git
 cd crosstool-ng/
+```
+
+Use 1.22.0 (Released version)
+```sh
 git checkout -b crosstool-ng-1.22.0
 autoreconf
 ./configure --enable-local
@@ -14,7 +19,6 @@ make install
 ```
 
 Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit
-
 ```sh
 ./ct-ng list-samples
 ./ct-ng arm-cortexa5-linux-uclibcgnueabihf
