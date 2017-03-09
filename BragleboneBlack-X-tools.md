@@ -12,9 +12,14 @@ make install
 ./ct-ng build
 
 ```
+
+Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit
+
+```sh
 ./ct-ng list-samples
 ./ct-ng arm-cortexa5-linux-uclibcgnueabihf
-   
+```
+
 ---
 
 ### C library
