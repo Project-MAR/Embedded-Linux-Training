@@ -10,7 +10,7 @@ make
 make install
 ```
 
-Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit   
+Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit (implementing the ARMv7-A architecture)   
 config for arm-cortex_a8-linux-uclibcgnueabihf by select closest config and edit the additional in menuconfig.   
 Still can not select iPV6 support
 ```sh
