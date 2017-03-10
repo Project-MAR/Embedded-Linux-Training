@@ -11,7 +11,8 @@ make install
 ```
 
 Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit   
-config for arm-cortex_a8-linux-uclibcgnueabihf
+config for arm-cortex_a8-linux-uclibcgnueabihf by select closest config and edit the additional in menuconfig.   
+Still can not select iPV6 support
 ```sh
 ./ct-ng list-samples
 ./ct-ng arm-cortex_a8-linux-gnueabi
