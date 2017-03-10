@@ -10,7 +10,8 @@ make
 make install
 ```
 
-Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit
+Note: BeagleBone Black use 1-GHz Sitara™ ARM® Cortex®-A8 32-Bit   
+config for arm-cortex_a8-linux-uclibcgnueabihf
 ```sh
 ./ct-ng list-samples
 ./ct-ng arm-cortex_a8-linux-gnueabi
