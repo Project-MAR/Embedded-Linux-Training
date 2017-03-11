@@ -9,3 +9,14 @@ setenv autostart no
 saveenv
 ```
 then, restart a board
+
+### Server (PC)
+```sh
+
+```
+
+### Client (Beaglebone black)
+```sh
+
+```
+
